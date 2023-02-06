@@ -33,6 +33,7 @@ class Person {  //this constru
         this.favIceCream = favIceCream,
         this.favColor = favColor,
         this.ssn = ssn,
+        this.arms = arms,
         this.legs =legs 
     }
     greet(){  //these are functionalities and methods of the new person
@@ -64,18 +65,18 @@ console.log(eric);
 // console.log(greet);
 // console.log(gotOlder);
 
-class SuperHero extends Person{
-    fly(){
-        console.log("Up up and away");
-    }
-    greet(otherPerson){
-        console.log("Greetings" +otherPerson);
-    }
-    jump(){
-        super.hop(); //instead of using ".this" we use super to call the parent that it's related to.
-        this.fly();
-    }
-};
+// class SuperHero extends Person{
+//     fly(){
+//         console.log("Up up and away");
+//     }
+//     greet(otherPerson){
+//         console.log("Greetings" +otherPerson);
+//     }
+//     jump(){
+//         super.hop(); //instead of using ".this" we use super to call the parent that it's related to.
+//         this.fly();
+//     }
+// };
 
-const superman = new SuperHero('Clark Kent', 30, "black");
-superman.hop();
+// const superman = new SuperHero('Clark Kent', 30, "black");
+// superman.hop();
